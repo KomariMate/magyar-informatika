@@ -30,3 +30,11 @@ header{
 section{
     width: 50%;
 }
+
+#alkotok{
+  
+    
+}
+li{
+    list-style: square;
+}
