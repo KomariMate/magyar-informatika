@@ -3,10 +3,16 @@ body{
     background-size: cover;
     opacity: 90%;
     color: white;
+    font-family: "Macondo", serif;
+    font-weight: 400;
+    font-style: normal;
+   
 
     
 
 }
+
+  
 
 main{
     display: flex;
