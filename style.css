@@ -56,6 +56,9 @@ a{
     padding: 10px;
     
 }
+.alkotok{
+    width: 25%;
+}
 
 a:hover{
     background-color: darkred;
