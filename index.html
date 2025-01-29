@@ -76,6 +76,21 @@
           lyukszalag, de ezt idővel 8 csatornás (teletype) szalag váltotta fel.
           Kimeneti periféria egy teletype írógép volt.
         </p>
+        <p>
+          A gép összességében 770 elektroncsőből, és 2000 diódából állt, nagy
+          meleget termelt, sok probléma volt a hűtésével. Fogyasztása 10 KW és
+          nagyjából 3 m² alapterületet igényelt.
+        </p>
+        <p>
+          A gép maga 3 önálló szekrényből állt. A központi szekrényben
+          helyezkedett el az aritmetikai egység, vezérlő egység és a vezérlő
+          pult. Külön szekrényben volt az operatív tár szerepét játszó mágnesdob
+          és a többi periféria vezérlője. Egy harmadik szekrény tartalmazta a
+          tápegységeket. Általában ezen kívül a gépterem felszerelése volt még
+          egy asztal a lyukszalagolvasó és a teletype részére, de ezeket a
+          perifériákat a géptermen kívül is el lehetett helyezni; hagyományos
+          telekommunikációs kapcsolattal akár a „távmunka” is biztosítható volt.
+        </p>
       </section>
       <section id="alkotok">
         <h2>Alkotók:</h2>
@@ -93,50 +108,45 @@
         </ul>
       </section>
 
+      <section>
+        <form action="" name="data">
+          <h2>Kérdőív:</h2>
+          <label for="jegy">Hany jegyet szeretne venni?</label>
+          <input type="number" name="hany" id="jegy" /><br /><br />
+          <label for="18"> Elmultál 18 éves?</label>
+          <label for="igen">igen</label>
+          <input type="radio" name="ig" id="igen" required />
+          <label for="nem">nem</label>
+          <input type="radio" name="ne" id="nem" required /><br /><br />
 
-     
+          <label for="nev">Saját név:</label>
+          <input type="text" name="sajat" id="nev" /><br /><br />
 
+          <label for="email">Emailcím:</label>
+          <input type="email" name="emailcim" id="email" /><br /><br />
 
+          <label for="telo">Telefonszám:</label>
+          <input type="number" name="tel" id="telo" /><br /><br />
 
-    <section>
-    <form action="" name="data">
-    <h2>Kérdőív:</h2>
-        <label for="jegy">Hany jegyet szeretne venni?</label>
-        <input type="number" name="hany" id="jegy" ><br><br>
-        <label for="18"> Elmultál 18 éves?</label>
-        <label for="igen">igen</label>
-        <input type="radio" name="ig" id="igen" required>
-        <label for="nem">nem</label>
-        <input type="radio" name="ne" id="nem" required><br><br>
+          <label for="nap"> Hany napra szeretnel szállást foglalni:</label
+          ><br />
+          <label for="1">1</label>
+          <input type="radio" name="nap" id="1" value="8000" />
+          <label for="2">2</label>
+          <input type="radio" name="nap" id="2" value="10000" />
+          <label for="nem">nem kérek</label>
+          <input type="radio" name="nap" id="nem" value="0" /><br />
 
-
-
-        <label for="nev">Saját név:</label>
-        <input type="text" name="sajat" id="nev"><br><br>
-
-        <label for="email">Emailcím:</label>
-        <input type="email" name="emailcim" id="email"><br><br>
-
-        <label for="telo">Telefonszám:</label>
-        <input type="number" name="tel" id="telo"><br><br>
-
-        <label for="nap"> Hany napra szeretnel szállást foglalni:</label><br>
-        <label for="1">1</label>
-        <input type="radio" name="nap" id="1" value="8000">
-        <label for="2">2</label>
-        <input type="radio" name="nap" id="2" value="10000">
-        <label for="nem">nem kérek</label>
-        <input type="radio" name="nap" id="nem" value="0"><br>
-
-        <p>Egyeb szolgáltatások:</p>
-        <select name="adat" id="adatok">
-          <option value="2000">Reggeli</option>
-          <option value="0">nem kér</option>
-          <option value="3000">reggeli és vacsora</option>
-        </select><br> <br>
-        <input type="button" onclick="szamitas()" value="Küldés">
-    </form>
-    </section>
+          <p>Egyeb szolgáltatások:</p>
+          <select name="adat" id="adatok">
+            <option value="2000">Reggeli</option>
+            <option value="0">nem kér</option>
+            <option value="3000">reggeli és vacsora</option></select
+          ><br />
+          <br />
+          <input type="button" onclick="szamitas()" value="Küldés" />
+        </form>
+      </section>
     </main>
     <h3 id="osszeg"></h3>
   </body>
