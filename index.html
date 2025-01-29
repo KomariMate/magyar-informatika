@@ -26,8 +26,14 @@
           alt="m-3"
         />
       </header>
+      <article>
+        <button id="tortenet">Történet</button>
+        <button id="felepites">Felépítés</button>
+        <button id="alkotok">Alkotók</button>
+        <button id="kerdoiv">Kérdőív</button>
+      </article>
       <section>
-        <h2>Története</h2>
+        <h2 id="tortenet">Története</h2>
         <p>
           Az M–3 terveit a Szovjetunió Tudományos Akadémiájának Energetikai
           Kutatóintézetében dolgozták ki, 1956-58 között. A cél egy, az abban az
@@ -58,7 +64,7 @@
         </p>
       </section>
       <section>
-        <h2>Felépítése</h2>
+        <h2 id="felepites">Felépítése</h2>
         <p>
           Az M–3 kétcímes gép volt 31 bites szavakkal (ebből az első bit az
           előjel bit). A magyar változat operatív memóriája, magyar fejlesztésű
@@ -92,8 +98,9 @@
 
 
 
-<form action="data">
-  <h2>Kérdőív:</h2>
+    <section>
+    <form action="" name="data">
+    <h2>Kérdőív:</h2>
         <label for="jegy">Hany jegyet szeretne venni?</label>
         <input type="number" name="hany" id="jegy" ><br><br>
         <label for="18"> Elmultál 18 éves?</label>
@@ -127,11 +134,11 @@
           <option value="0">nem kér</option>
           <option value="3000">reggeli és vacsora</option>
         </select><br> <br>
-        <input type="button" value="Küldés">
+        <input type="button" onclick="szamitas()" value="Küldés">
     </form>
-
-    
+    </section>
     </main>
+    <h3 id="osszeg"></h3>
   </body>
   <script src="script.js"></script>
 </html>
