@@ -86,24 +86,47 @@
           <li>Jándy Géza</li>
         </ul>
       </section>
-      <form action="">
-        <label for="neve">Saját neved:</label>
-        <input type="text" name="sajat nev" id="neve" required><br><br>
+     
 
-        <label for="email">E-mailcímed:</label>
-        <input type="email" name="mail" id="email"><br><br>
 
-        <label for="teloszam">Telefonszáma:</label>
-        <input type="number" name="szam" id="teloszam"><br><br>
+ 
+<form action="data">
+  <h2>Kérdőív:</h2>
+        <label for="jegy">Hany jegyet szeretne venni?</label>
+        <input type="number" name="hany" id="jegy" ><br><br>
+        <label for="18"> Elmultál 18 éves?</label>
+        <label for="igen">igen</label>
+        <input type="radio" name="ig" id="igen" required>
+        <label for="nem">nem</label>
+        <input type="radio" name="ne" id="nem" required><br><br>
 
-        <label for="napok">Hany napra szretnel foglalni szállást:</label><br><br>
+
+
+        <label for="nev">Saját név:</label>
+        <input type="text" name="sajat" id="nev"><br><br>
+
+        <label for="email">Emailcím:</label>
+        <input type="email" name="emailcim" id="email"><br><br>
+
+        <label for="telo">Telefonszám:</label>
+        <input type="number" name="tel" id="telo"><br><br>
+
+        <label for="nap"> Hany napra szeretnel szállást foglalni:</label><br>
         <label for="1">1</label>
-        <input type="radio" name="nap" id="1">
+        <input type="radio" name="nap" id="1" value="8000">
         <label for="2">2</label>
-        <input type="radio" name="nap" id="2">
-        <label for="nemker">nem kérek</label>
-        <input type="radio" name="nap" id="nemker">
-      </form>
+        <input type="radio" name="nap" id="2" value="10000">
+        <label for="nem">nem kérek</label>
+        <input type="radio" name="nap" id="nem" value="0"><br>
+
+        <p>Egyeb szolgáltatások:</p>
+        <select name="adat" id="adatok">
+          <option value="2000">Reggeli</option>
+          <option value="0">nem kér</option>
+          <option value="3000">reggeli és vacsora</option>
+        </select><br> <br>
+        <input type="button" value="Küldés">
+    </form>
     </main>
   </body>
 </html>
