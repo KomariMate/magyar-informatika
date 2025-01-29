@@ -38,3 +38,8 @@ section{
 li{
     list-style: square;
 }
+
+header img{
+    border-radius:50px;
+    border: solid 2px white;
+}
