@@ -59,7 +59,15 @@ a{
 .alkotok{
     width: 25%;
 }
+.alkotok img{
+    width: 250px;
+}
 
 a:hover{
     background-color: darkred;
+}
+
+#ut{
+    width: 100%;
+    text-align: center;
 }
